@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	useEffect(() => {
-		fetch("http://localhost:5000/")
+		fetch("/api/")
 			.then((res) => res.json())
 			.then((json) => console.log({ json }));
 	}, []);
